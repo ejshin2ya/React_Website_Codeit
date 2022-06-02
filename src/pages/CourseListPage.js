@@ -18,13 +18,7 @@ function CourseListPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSearchParams(
-      keyword
-        ? {
-            keyword,
-          }
-        : {}
-    );
+    setSearchParams(keyword ? { keyword } : {});
   };
 
   return (
